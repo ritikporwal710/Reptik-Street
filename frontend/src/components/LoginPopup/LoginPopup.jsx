@@ -13,7 +13,7 @@ const LoginPopup = ({setShowLogin}) => {
                 <h2>{currState}</h2>
                 <img onClick={()=>setShowLogin(false)} src={assets.cross_icon} alt="" />
             </div>
-            <div className="login-popup-input">
+            <div className="login-popup-inputs">
 
                 {currState==="Login"?<></>:<input type="text" placeholder='Your name' required />}
                 <input type="email" placeholder='Your email' required />
@@ -24,8 +24,9 @@ const LoginPopup = ({setShowLogin}) => {
                 <input type="checkbox" required />
                 <p> By Continuing I agree to the terms of Use & Privacy Policy.</p>
             </div>
-            {currState === "Login"? <p>Create a new account? <span onClick={()=>setCurrState("Sign Up")}> Click Here </span> </p>:<></>}
-            {currState === "Sign up"? <p>Already have an account? <span onClick={()=>setCurrState("Login")}>Login Here </span> </p>: <></> }
+            {currState === "Login"? <p>Create a new account? <span onClick={()=>setCurrState("Sign Up")}> Click Here </span> </p>:
+            <p>Already have an account? <span onClick={()=>setCurrState("Login")}>Login Here </span> </p>}
+
             
         </form>
     </div>
