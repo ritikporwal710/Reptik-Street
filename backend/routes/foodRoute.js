@@ -4,6 +4,13 @@ import multer from "multer";
 
 const foodRouter = express.Router();
 
+// Image storage engine
+
+const storage = multer.diskStorage({
+
+    
+})
+
 foodRouter.post("/add",addFood)
 
 
