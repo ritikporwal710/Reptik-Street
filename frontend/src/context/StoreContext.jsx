@@ -6,7 +6,8 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000";
+  // const url = "http://localhost:4000";
+  const url = "https://reptik-street-backend-qe9p.onrender.com";
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
   const addToCart = async (itemId) => {
