@@ -8,7 +8,6 @@ import AppDownload from '../../components/AppDownload/AppDownload';
 const Home = () => {
 
     const [category,setCategory] = useState("All");
-    const [offer, setOffer] = useState(false);
 
 
   return (
